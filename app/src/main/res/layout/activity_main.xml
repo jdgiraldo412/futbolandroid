@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C1A542"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="EQUIPO DE FUTBOL"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/etcodigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="number"
+        android:text="codigo"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/etnombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="nombre"
+        android:textSize="30dp" />
+
+    <EditText
+        android:id="@+id/etciudad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#00CD0000"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="textPersonName"
+        android:text="ciudad"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/tvcategoria"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Categoria"
+        android:textColor="@color/black"
+        android:textSize="30dp" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbaficionado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="aficionado"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:id="@+id/rbacenso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="acenso"
+            android:textSize="25dp" />
+
+        <RadioButton
+            android:id="@+id/rbprofesional"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="profesional"
+            android:textSize="25dp" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/cbactivo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Activo"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btadiccionar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Adiccionar" />
+
+        <Button
+            android:id="@+id/btconsultar"
+            android:layout_width="wrap_content"
+            android:layout_height="71dp"
+            android:layout_weight="1"
+            android:text="Consultar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btmodificar"
+            android:layout_width="99dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Modificar" />
+
+        <Button
+            android:id="@+id/btanular"
+            android:layout_width="wrap_content"
+            android:layout_height="73dp"
+            android:layout_weight="1"
+            android:text="Anular" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btcancelar"
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:text="Cancelar" />
+
+</LinearLayout>
